@@ -1,0 +1,51 @@
+C# vs Java
+
+1) Listeler
+| .NET (C#)                           | Java                                      | Açıklama                         |
+| ----------------------------------- | ----------------------------------------- | -------------------------------- |
+| `List<int> list = new List<int>();` | `List<Integer> list = new ArrayList<>();` | Dinamik dizi (index ile erişim). |
+| `list.Add(10);`                     | `list.add(10);`                           | Eleman ekleme                    |
+| `list[0]`                           | `list.get(0)`                             | Index ile erişim                 |
+| `list.Contains(10)`                 | `list.contains(10)`                       | İçeriyor mu kontrolü             |
+
+2) Dictionary/HashMap
+| .NET (C#)                                                     | Java                                         | Açıklama           |
+| ------------------------------------------------------------- | -------------------------------------------- | ------------------ |
+| `Dictionary<string,int> dict = new Dictionary<string,int>();` | `Map<String,Integer> map = new HashMap<>();` | Key-Value map      |
+| `dict.Add("a", 1);`                                           | `map.put("a", 1);`                           | Ekleme             |
+| `dict["a"]`                                                   | `map.get("a")`                               | Key’den değer alma |
+| `dict.ContainsKey("a")`                                       | `map.containsKey("a")`                       | Key var mı         |
+| `dict.ContainsValue(1)`                                       | `map.containsValue(1)`                       | Value var mı       |
+| `dict.Remove("a")`                                            | `map.remove("a")`                            | Silme              |
+
+3) HashSet
+| .NET (C#)                                | Java                                  | Açıklama                     |
+| ---------------------------------------- | ------------------------------------- | ---------------------------- |
+| `HashSet<int> set = new HashSet<int>();` | `Set<Integer> set = new HashSet<>();` | Benzersiz değerler topluluğu |
+| `set.Add(5);`                            | `set.add(5);`                         | Ekleme                       |
+| `set.Contains(5)`                        | `set.contains(5)`                     | İçeriyor mu                  |
+| `set.Remove(5)`                          | `set.remove(5)`                       | Silme                        |
+
+4) Queue
+| .NET (C#)                          | Java                                     | Açıklama                       |
+| ---------------------------------- | ---------------------------------------- | ------------------------------ |
+| `Queue<int> q = new Queue<int>();` | `Queue<Integer> q = new LinkedList<>();` | FIFO                           |
+| `q.Enqueue(10);`                   | `q.add(10);` veya `q.offer(10);`         | Kuyruğa ekleme                 |
+| `q.Dequeue();`                     | `q.poll();`                              | Kuyruktan çıkar (boşsa `null`) |
+| `q.Peek();`                        | `q.peek();`                              | Sıradaki elemana bakma         |
+
+
+5) Stack
+| .NET (C#)                           | Java                                 | Açıklama          |
+| ----------------------------------- | ------------------------------------ | ----------------- |
+| `Stack<int> st = new Stack<int>();` | `Stack<Integer> st = new Stack<>();` | LIFO              |
+| `st.Push(10);`                      | `st.push(10);`                       | Üste ekleme       |
+| `st.Pop();`                         | `st.pop();`                          | Üstten çıkarma    |
+| `st.Peek();`                        | `st.peek();`                         | Üst elemana bakma |
+
+6) Özet farklar
+* C# Dictionary, List, Queue, Stack → hepsi System.Collections.Generic içinde.
+* Java tarafında → java.util.* paketinden gelir (ArrayList, HashMap, HashSet, LinkedList, Stack).
+* Java’da interface + implementation ayrımı var → örneğin Map interface, HashMap implementation. Bu yüzden genelde:
+    Map<String, Integer> map = new HashMap<>();
+şeklinde kullanılır. (C#’ta direkt Dictionary kullanıyorsun).

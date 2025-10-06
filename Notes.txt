@@ -1,0 +1,78 @@
+1️⃣ HR: Tell me about yourself.
+🟢 Answer:
+Sure! I’m a software engineer with over nine years of professional experience, currently working at Domino’s Pizza Enterprises in the Netherlands.
+I’ve mainly focused on building scalable microservices and cloud-based systems, recently leading a migration from AWS to Azure with zero downtime.
+Before Domino’s, I worked at Coolblue, where I designed and maintained high-performance services that handled millions of daily transactions.
+I really enjoy working in collaborative environments, improving systems’ reliability, and mentoring others.
+Outside of work, I’m passionate about music and board games — they help me unwind and stay creative.
+
+2️⃣ HR: Why are you interested in this position / our company?
+🟢 Answer:
+I’m drawn to companies that value scalability, clean architecture, and innovation — all things I see in your organization.
+I also appreciate environments that encourage learning and cross-team collaboration.
+Given my experience with cloud migration, distributed systems, and performance optimization, I believe I could make a meaningful impact while continuing to grow technically.
+
+3️⃣ HR: What are your strengths?
+🟢 Answer:
+I’d say my strengths are problem-solving, attention to detail, and adaptability.
+I’ve worked on large-scale systems with millions of daily transactions, so I’ve learned how to balance performance, maintainability, and reliability.
+I also communicate well with both technical and non-technical stakeholders, which helps in aligning everyone toward a shared goal.
+
+4️⃣ HR: What are your weaknesses?
+🟢 Answer:
+I tend to work quite fast, which sometimes makes me overlook smaller details. 
+I’ve been actively working on finding the right balance — not being too much of a perfectionist, but also not rushing through tasks.
+
+Another thing I’ve noticed is that frequent context switching can sometimes make me forget minor things, 
+so I’ve built a habit of taking structured notes to stay organized and avoid losing track.
+
+Culturally, I also used to hold back from expressing my opinions directly — I believed that “silence is golden.” 
+But after moving to the Netherlands, I realized that open and direct communication is actually a strength. 
+I’ve been consciously improving this, and it’s helped me collaborate more effectively with international teams.
+
+5️⃣ HR: What are your career goals?
+🟢 Answer:
+In the short term, I want to deepen my cloud and system design expertise, especially in Azure and distributed architectures.
+In the long run, I’d like to move into a technical leadership role where I can guide architecture decisions and mentor other developers.
+
+6️⃣ HR: Why did you leave your previous company?
+🟢 Answer:
+Unfortunately, my current company is undergoing a major reorganization.
+Until recently, Domino’s had engineering teams in Australia, Europe, and Malaysia.
+After a change in leadership, the company decided to centralize all development in Malaysia to reduce costs and reallocate resources 
+toward marketing and advertising.
+As part of this global restructuring, the European engineering department — including my role — is being closed.
+
+7️⃣ HR: How do you handle conflicts in a team?
+🟢 Answer:
+I focus on understanding the root of the issue — whether it’s a technical disagreement or a communication gap.
+I listen actively, clarify assumptions, and try to bring data or examples to guide the discussion objectively.
+I believe in respectful, solution-oriented communication — and I’ve found that most conflicts are resolved quickly with transparency.
+
+8️⃣ HR: Describe a project you’re proud of.
+🟢 Answer:
+At Paynet, I led the migration from a monolithic system to a microservices architecture.
+It was a major challenge involving scalability, compliance, and modernization.
+The result was a far more resilient and maintainable payment infrastructure that handled higher loads and supported faster development cycles.
+That project really shaped how I think about system design today.
+
+9️⃣ HR: What motivates you at work?
+🟢 Answer:
+I’m motivated by solving complex technical problems and seeing the real-world impact of my work.
+When I see a system performing smoothly or teams collaborating better because of something I built — that’s very rewarding.
+Continuous learning is also a big motivator for me.
+
+
+
+
+🟩 Think Customer First
+
+In every project I’ve worked on, I always start by understanding how the change will impact the end user.
+For example, at Domino’s, when optimizing APIs that served 3,500+ stores, I focused on improving response times and reducing downtime, because even small delays directly affected store operations and customer satisfaction.
+For me, technical excellence only matters if it improves the customer experience.
+
+🟩 Own It
+
+I always take ownership of what I build — from design to production.
+If an incident happens, I don’t wait for someone else to fix it; I dig into logs, find the root cause, and make sure it doesn’t happen again.
+I see ownership as not just responsibility, but also pride in the outcome.
