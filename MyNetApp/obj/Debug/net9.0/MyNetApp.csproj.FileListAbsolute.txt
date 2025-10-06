@@ -1,0 +1,15 @@
+C:\Users\Deniz.Demiryurek\OneDrive - DOMINOS PIZZA AUSTRALIA PTY LTD\Documents\DotnetVsOthers\MyNetApp\bin\Debug\net9.0\MyNetApp.exe
+C:\Users\Deniz.Demiryurek\OneDrive - DOMINOS PIZZA AUSTRALIA PTY LTD\Documents\DotnetVsOthers\MyNetApp\bin\Debug\net9.0\MyNetApp.deps.json
+C:\Users\Deniz.Demiryurek\OneDrive - DOMINOS PIZZA AUSTRALIA PTY LTD\Documents\DotnetVsOthers\MyNetApp\bin\Debug\net9.0\MyNetApp.runtimeconfig.json
+C:\Users\Deniz.Demiryurek\OneDrive - DOMINOS PIZZA AUSTRALIA PTY LTD\Documents\DotnetVsOthers\MyNetApp\bin\Debug\net9.0\MyNetApp.dll
+C:\Users\Deniz.Demiryurek\OneDrive - DOMINOS PIZZA AUSTRALIA PTY LTD\Documents\DotnetVsOthers\MyNetApp\bin\Debug\net9.0\MyNetApp.pdb
+C:\Users\Deniz.Demiryurek\OneDrive - DOMINOS PIZZA AUSTRALIA PTY LTD\Documents\DotnetVsOthers\MyNetApp\obj\Debug\net9.0\MyNetApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Deniz.Demiryurek\OneDrive - DOMINOS PIZZA AUSTRALIA PTY LTD\Documents\DotnetVsOthers\MyNetApp\obj\Debug\net9.0\MyNetApp.AssemblyInfoInputs.cache
+C:\Users\Deniz.Demiryurek\OneDrive - DOMINOS PIZZA AUSTRALIA PTY LTD\Documents\DotnetVsOthers\MyNetApp\obj\Debug\net9.0\MyNetApp.AssemblyInfo.cs
+C:\Users\Deniz.Demiryurek\OneDrive - DOMINOS PIZZA AUSTRALIA PTY LTD\Documents\DotnetVsOthers\MyNetApp\obj\Debug\net9.0\MyNetApp.csproj.CoreCompileInputs.cache
+C:\Users\Deniz.Demiryurek\OneDrive - DOMINOS PIZZA AUSTRALIA PTY LTD\Documents\DotnetVsOthers\MyNetApp\obj\Debug\net9.0\MyNetApp.sourcelink.json
+C:\Users\Deniz.Demiryurek\OneDrive - DOMINOS PIZZA AUSTRALIA PTY LTD\Documents\DotnetVsOthers\MyNetApp\obj\Debug\net9.0\MyNetApp.dll
+C:\Users\Deniz.Demiryurek\OneDrive - DOMINOS PIZZA AUSTRALIA PTY LTD\Documents\DotnetVsOthers\MyNetApp\obj\Debug\net9.0\refint\MyNetApp.dll
+C:\Users\Deniz.Demiryurek\OneDrive - DOMINOS PIZZA AUSTRALIA PTY LTD\Documents\DotnetVsOthers\MyNetApp\obj\Debug\net9.0\MyNetApp.pdb
+C:\Users\Deniz.Demiryurek\OneDrive - DOMINOS PIZZA AUSTRALIA PTY LTD\Documents\DotnetVsOthers\MyNetApp\obj\Debug\net9.0\MyNetApp.genruntimeconfig.cache
+C:\Users\Deniz.Demiryurek\OneDrive - DOMINOS PIZZA AUSTRALIA PTY LTD\Documents\DotnetVsOthers\MyNetApp\obj\Debug\net9.0\ref\MyNetApp.dll
