@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         int[] result = Solutions.twoSum(new int[] { 3, 2, 4 }, 6);
+        /*
         System.out.println("Indices: " + result[0] + ", " + result[1]);
 
         System.out.println("Is Valid: " + Solutions.validParentheses("()[]{}"));
@@ -16,5 +17,6 @@ public class Main {
         System.out.println("Max Depth: " + Solutions.maxDepth(
                 new TreeNode(3, new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(7)))
         ));
+        */
     }
 }

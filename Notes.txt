@@ -1,8 +1,9 @@
 1️⃣ HR: Tell me about yourself.
 🟢 Answer:
-I'm originally from Turkey and moved to Netherlands 3 years ago with my wife and our cat. 
-Btw not 
+I'm originally from Turkey and moved to Netherlands 3 years ago with my wife and our 2 cats, one is smart other one is kind of dumb :)
+I’ve been working as a software engineer for almost ten years now, across different companies, domains, tech stacks and cultures.
 
+Unfortunately, my current company is undergoing a major reorganization.
 
 Sure! I graduated in Computer Engineering in Turkey, and since then, 
 I realized I enjoy solving complex problems and building reliable, scalable systems that have a real impact on people’s lives.
@@ -18,13 +19,18 @@ Outside of work, I’m passionate about music and board games. I play the piano 
 
 2️⃣ HR: Why are you interested in this position / our company?
 🟢 Answer:
-I’m drawn to companies that value scalability, clean architecture, and innovation — all things I see in your organization.
-I also appreciate environments that encourage learning and cross-team collaboration.
-Given my experience with cloud migration, distributed systems, and performance optimization, I believe I could make a meaningful impact while continuing to grow technically.
+Booking has actually been one of the top companies I’ve been interested in since I started looking for opportunities in the Netherlands. 
+The idea of working on systems that are used by millions of people worldwide really excites me.
+I also really admire the engineering culture here — the focus on collaboration, innovation, and building high-quality products. 
+With my experience in cloud migrations, distributed systems, and performance optimization, 
+I feel I could make a real impact while continuing to grow technically in such an inspiring environment.
 
 3️⃣ HR: What are your strengths?
 🟢 Answer:
-I’d say my strengths are problem-solving, attention to detail, and adaptability.
+I’d say my strengths are problem-solving, taking ownership, and adaptability.
+I step up, take responsibility, and make sure things get done, that satisfies me.
+
+
 I’ve worked on large-scale systems with millions of daily transactions, so I’ve learned how to balance performance, maintainability, and reliability.
 I also communicate well with both technical and non-technical stakeholders, which helps in aligning everyone toward a shared goal.
 
