@@ -84,11 +84,11 @@ int k = 2;
 var topHotels = awardTopKHotels(positiveKeywords, negativeKeywords, hotelIds, reviews, k);
 */
 
-Console.WriteLine("MyAtoi: " + Solutions.MyAtoi(/*"words and 987"*/ "    -477"  /*"8548c124"*/));
+//Console.WriteLine("MyAtoi: " + Solutions.MyAtoi(/*"words and 987"*/ "    -123"  /*"8548c124"*/));
 
-Console.WriteLine("LongestPalindrome: " + Solutions.LongestPalindromeSubstring3("ababa"));
+//Console.WriteLine("LongestPalindrome: " + Solutions.LongestPalindromeSubstring3("ababa"));
 
-Console.WriteLine();
+Console.WriteLine("MaxArea: " + Solutions.MaxArea([1,8,6,2,5,4,8,3,7]));
 
 Console.WriteLine();
 Console.WriteLine();
