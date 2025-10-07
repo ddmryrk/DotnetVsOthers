@@ -88,9 +88,9 @@ var topHotels = awardTopKHotels(positiveKeywords, negativeKeywords, hotelIds, re
 
 Console.WriteLine("MyAtoi: " + Solutions.MyAtoi("words and 987" /*"    -477"*/  /*"8548c124"*/));
 
-
+Console.WriteLine("LongestPalindrome: " + Solutions.LongestPalindromeSubstring3("ababa"));
 
 Console.WriteLine();
-Console.WriteLine();
+
 Console.WriteLine();
 Console.WriteLine();

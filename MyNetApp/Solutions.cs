@@ -1,3 +1,5 @@
+using System.Text;
+
 namespace MyNetApp;
 
 public class Solutions
@@ -675,6 +677,158 @@ public class Solutions
         }
 
         return sign * num;
+    }
+
+
+    public static string LongestPalindromeSubstring(string s)
+    {
+        //O(N2) / O(1)
+        // Check if the input string is empty, return an empty string if so
+        if (string.IsNullOrEmpty(s))
+            return "";
+
+        // Initialize variables to store the indices of the longest palindrome found
+        int[] longestPalindromeIndices = { 0, 0 };
+
+        // Loop through the characters in the input string
+        for (int i = 0; i < s.Length; ++i)
+        {
+            // Find the indices of the longest palindrome centered at character i
+            int[] currentIndices = ExpandAroundCenter(s, i, i);
+
+            // Compare the length of the current palindrome with the longest found so far
+            if (currentIndices[1] - currentIndices[0] > longestPalindromeIndices[1] - longestPalindromeIndices[0])
+            {
+                // Update the longest palindrome indices if the current one is longer
+                longestPalindromeIndices = currentIndices;
+            }
+
+            // Check if there is a possibility of an even-length palindrome centered at
+            // character i and i+1
+            if (i + 1 < s.Length && s[i] == s[i + 1])
+            {
+                // Find the indices of the longest even-length palindrome centered at characters
+                // i and i+1
+                int[] evenIndices = ExpandAroundCenter(s, i, i + 1);
+
+                // Compare the length of the even-length palindrome with the longest found so
+                // far
+                if (evenIndices[1] - evenIndices[0] > longestPalindromeIndices[1] - longestPalindromeIndices[0])
+                {
+                    // Update the longest palindrome indices if the even-length one is longer
+                    longestPalindromeIndices = evenIndices;
+                }
+            }
+        }
+
+        // Extract and return the longest palindrome substring using the indices
+        return s.Substring(longestPalindromeIndices[0], longestPalindromeIndices[1] - longestPalindromeIndices[0] + 1);
+    }
+    // Helper function to find and return the indices of the longest palindrome
+    // extended from s[i..j] (inclusive) by expanding around the center
+    private static int[] ExpandAroundCenter(string s, int i, int j)
+    {
+        // Expand the palindrome by moving outward from the center while the characters match
+        while (i >= 0 && j < s.Length && s[i] == s[j])
+        {
+            i--; // Move the left index to the left
+            j++; // Move the right index to the right
+        }
+        // Return the indices of the longest palindrome found
+        return new int[] { i + 1, j - 1 };
+    }
+
+    public static string LongestPalindromeSubstring2(string s)
+    {
+        string T = "^#" + string.Join("#", s.ToCharArray()) + "#$";
+        int n = T.Length;
+        int[] P = new int[n];
+        int C = 0, R = 0;
+
+        for (int i = 1; i < n - 1; i++)
+        {
+            P[i] = (R > i) ? Math.Min(R - i, P[2 * C - i]) : 0;
+            while (T[i + 1 + P[i]] == T[i - 1 - P[i]])
+                P[i]++;
+
+            if (i + P[i] > R)
+            {
+                C = i;
+                R = i + P[i];
+            }
+        }
+
+        int max_len = P.Max();
+        int center_index = Array.IndexOf(P, max_len);
+        return s.Substring((center_index - max_len) / 2, max_len);
+    }
+
+    public static string LongestPalindromeSubstring3(string s)
+    {
+        // O(N) / O(N)
+        // Step 1: Preprocess the input string
+        StringBuilder processedStr = new StringBuilder("^#");
+        foreach (char c in s)
+        {
+            processedStr.Append(c).Append("#");
+        }
+        processedStr.Append("$");
+        string modifiedString = processedStr.ToString();
+
+        // Step 2: Initialize variables for the algorithm
+        int strLength = modifiedString.Length;
+        int[] palindromeLengths = new int[strLength];
+        int center = 0;  // Current center of the palindrome
+        int rightEdge = 0;  // Rightmost edge of the palindrome
+
+        // Step 3: Loop through the modified string to find palindromes
+        for (int i = 1; i < strLength - 1; i++)
+        {
+            //- # a # b # a # b # a # +
+            //0 1 2 3 4 5 6 7 8 9 0 1 2
+            if (rightEdge > i)
+            {
+                palindromeLengths[i] = Math.Min(rightEdge - i, palindromeLengths[2 * center - i]);
+            }
+            else
+            {
+                palindromeLengths[i] = 0;
+            }
+
+            var l = modifiedString[i + 1 + palindromeLengths[i]];
+            var r = modifiedString[i - 1 - palindromeLengths[i]];
+            // Expand the palindrome around the current character
+            while (modifiedString[i + 1 + palindromeLengths[i]] == modifiedString[i - 1 - palindromeLengths[i]])
+            {
+                palindromeLengths[i]++;
+            }
+
+            // Update the rightmost edge and center if necessary
+            if (i + palindromeLengths[i] > rightEdge)
+            {
+                center = i;
+                rightEdge = i + palindromeLengths[i];
+            }
+        }
+
+        // Step 4: Find the longest palindrome and its center
+        int maxLength = 0;
+        int maxCenter = 0;
+        for (int i = 0; i < strLength; i++)
+        {
+            if (palindromeLengths[i] > maxLength)
+            {
+                maxLength = palindromeLengths[i];
+                maxCenter = i;
+            }
+        }
+
+        // Step 5: Extract the longest palindrome from the modified string
+        int start = (maxCenter - maxLength) / 2;
+        int end = start + maxLength;
+
+        // Return the longest palindrome in the original string
+        return s.Substring(start, end - start);
     }
 
 }

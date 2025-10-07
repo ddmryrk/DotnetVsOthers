@@ -1,10 +1,20 @@
 1️⃣ HR: Tell me about yourself.
 🟢 Answer:
-Sure! I’m a software engineer with over nine years of professional experience, currently working at Domino’s Pizza Enterprises in the Netherlands.
-I’ve mainly focused on building scalable microservices and cloud-based systems, recently leading a migration from AWS to Azure with zero downtime.
-Before Domino’s, I worked at Coolblue, where I designed and maintained high-performance services that handled millions of daily transactions.
-I really enjoy working in collaborative environments, improving systems’ reliability, and mentoring others.
-Outside of work, I’m passionate about music and board games — they help me unwind and stay creative.
+I'm originally from Turkey and moved to Netherlands 3 years ago with my wife and our cat. 
+Btw not 
+
+
+Sure! I graduated in Computer Engineering in Turkey, and since then, 
+I realized I enjoy solving complex problems and building reliable, scalable systems that have a real impact on people’s lives.
+I’ve been working as a software engineer for almost ten years now, across different companies, domains, tech stacks and cultures.
+
+Three years ago, I joined Coolblue and moved to the Netherlands with my wife and our cat. 
+Working in such international, cross-functional teams has helped me grow a lot — not only technically but also in how I communicate and collaborate effectively.
+It’s been an amazing experience working in such an international environment, learning from others, and focusing on building scalable, reliable systems.
+Now, I’m looking for my next challenge where I can combine that technical experience with my passion for solving meaningful problems — and 
+I believe Booking.com is the perfect place to do that.
+Outside of work, I’m passionate about music and board games. I play the piano and guitar, and I also enjoy doing small home renovation projects in my free time.
+
 
 2️⃣ HR: Why are you interested in this position / our company?
 🟢 Answer:
@@ -62,7 +72,15 @@ I’m motivated by solving complex technical problems and seeing the real-world 
 When I see a system performing smoothly or teams collaborating better because of something I built — that’s very rewarding.
 Continuous learning is also a big motivator for me.
 
-
+🟢 Answer — “What are you proud of in your previous job?”
+One of the moments I’m most proud of at Domino’s was taking ownership of a legacy Teams application. 
+Initially, the app was built by a third-party company using React, and when I joined, Domino’s had already parted ways with that company. 
+The challenge was that the code was almost undocumented and nobody wanted to take responsibility for it.
+I decided to take the initiative. I created full documentation for the codebase, maintained and improved the application, developed new features, 
+and managed the deployment and ongoing support. Taking full ownership of this project — 
+from understanding and cleaning up a legacy system to actively contributing to its evolution — was both challenging and extremely rewarding.
+It’s a project I’m genuinely proud of because it allowed me to demonstrate technical leadership, 
+initiative, and the ability to turn a neglected legacy application into a well-maintained, actively improved product.
 
 
 🟩 Think Customer First

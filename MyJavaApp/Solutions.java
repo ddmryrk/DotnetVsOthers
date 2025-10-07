@@ -95,13 +95,13 @@ public class Solutions {
     public static int climbStairs(int n) {
         // O(n) time and O(1) space complexity
         /*
-        if (n == 0 || n == 1) {
-            return 1;
-        }
-        return ClimbStairs(n-1) + ClimbStairs(n-2);
+         * if (n == 0 || n == 1) {
+         * return 1;
+         * }
+         * return ClimbStairs(n-1) + ClimbStairs(n-2);
          */
 
-         if (n == 0 || n == 1) {
+        if (n == 0 || n == 1) {
             return 1;
         }
         int prev = 1, curr = 1;
@@ -113,10 +113,11 @@ public class Solutions {
         return curr;
     }
 
-     public static int maxDepth(TreeNode root) {
+    public static int maxDepth(TreeNode root) {
         if (root == null) {
             return 0;
         }
         return 1 + Math.max(maxDepth(root.left), maxDepth(root.right));
     }
+    
 }
