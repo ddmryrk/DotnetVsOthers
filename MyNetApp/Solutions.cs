@@ -894,6 +894,166 @@ public class Solutions
         return maxArea;
     }
 
+    public static IList<IList<int>> ThreeSum(int[] nums)
+    {
+        Array.Sort(nums);
+        IList<IList<int>> result = new List<IList<int>>();
+
+        for (int i = 0; i < nums.Length; i++)
+        {
+            if (i > 0 && nums[i] == nums[i - 1])
+            {
+                continue; // Skip duplicate values for i
+            }
+
+            int j = i + 1, k = nums.Length - 1;
+
+            while (j < k)
+            {
+                int sum = nums[i] + nums[j] + nums[k];
+                if (sum == 0)
+                {
+                    result.Add(new List<int> { nums[i], nums[j], nums[k] });
+                    j++;
+                    k--;
+                    while (j < k && nums[j] == nums[j - 1]) j++;
+                    while (j < k && nums[k] == nums[k + 1]) k--;
+                }
+                else if (sum < 0)
+                {
+                    j++;
+                }
+                else
+                {
+                    k--;
+                }
+            }
+        }
+
+        return result;
+    }
+
+    public static IList<string> LetterCombinations(string digits)
+    {
+        if (digits.Length == 0) return new List<string>();
+        string[] comb = ["", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"];
+        List<string> result = [];
+        Solve(0, digits, comb, result, "");
+        return result;
+    }
+    private static void Solve(int index, string digits, string[] comb, List<string> result, string temp)
+    {
+        if (index == digits.Length)
+        {
+            result.Add(temp);
+            return;
+        }
+
+        foreach (char ch in comb[digits[index] - '0'])
+        {
+            Solve(index + 1, digits, comb, result, temp + ch);
+        }
+    }
+
+    public static int SearchInRotatedSortedArray(int[] nums, int target)
+    {
+        int len = nums.Length - 1;
+        int start = 0;
+        int end = len;
+
+        while (start <= end)
+        {
+            int mid = (start + end) / 2;
+
+            if (target == nums[mid])
+            {
+                return mid;
+            }
+
+            if (nums[mid] < nums[end])
+            {
+                if (target > nums[mid] && target <= nums[end])
+                {
+                    start = mid + 1;
+                }
+                else
+                {
+                    end = mid - 1;
+                }
+            }
+            else
+            {
+                if (target >= nums[start] && target < nums[mid])
+                {
+                    end = mid - 1;
+
+                }
+                else
+                {
+                    start = mid + 1;
+                }
+            }
+        }
+
+        return -1;
+    }
+
+
+    public static IList<IList<int>> CombinationSum(int[] candidates, int target)
+    {
+        List<IList<int>> result = [];
+        Array.Sort(candidates);
+        Backtrack(candidates, target, 0, [], result);
+        return result;
+    }
+    private static void Backtrack(int[] candidates, int remain, int start, List<int> current, List<IList<int>> result)
+    {
+        if (remain == 0)
+        {
+            result.Add([.. current]);
+            return;
+        }
+        if (remain < 0) return;
+
+        for (int i = start; i < candidates.Length; i++)
+        {
+            if (candidates[i] > remain)
+            {
+                break;
+            }
+
+            current.Add(candidates[i]);
+            Backtrack(candidates, remain - candidates[i], i, current, result);
+            current.RemoveAt(current.Count - 1);
+        }
+    }
+
+    public static IList<IList<int>> Permute(int[] nums)
+    {
+        List<IList<int>> result = [];
+        BacktrackPermute(nums, new List<int>(), result);
+        return result;
+    }
+    private static void BacktrackPermute(int[] nums, List<int> path, IList<IList<int>> result)
+    {
+        if (path.Count == nums.Length)
+        {
+            result.Add([.. path]);
+            return;
+        }
+
+        foreach (int num in nums)
+        {
+            if (path.Contains(num))
+                continue;
+
+            path.Add(num);
+            BacktrackPermute(nums, path, result);
+            path.RemoveAt(path.Count - 1);
+        }
+    }
+
+
 
 
 

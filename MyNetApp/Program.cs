@@ -88,7 +88,32 @@ var topHotels = awardTopKHotels(positiveKeywords, negativeKeywords, hotelIds, re
 
 //Console.WriteLine("LongestPalindrome: " + Solutions.LongestPalindromeSubstring3("ababa"));
 
-Console.WriteLine("MaxArea: " + Solutions.MaxArea([1,8,6,2,5,4,8,3,7]));
+//Console.WriteLine("MaxArea: " + Solutions.MaxArea([1,8,6,2,5,4,8,3,7]));
 
+//Console.WriteLine("ThreeSum: " + Solutions.ThreeSum([-1,0,1,2,-1, -1, -1,-4]));
+
+//Console.WriteLine("LetterCombinations: " + Solutions.LetterCombinations("234"));
+
+//Console.WriteLine("SearchInRotatedSortedArray: " + Solutions.SearchInRotatedSortedArray([4,5,6,0,1,2,3], 1));
+
+//Console.WriteLine("CombinationSum: " + Solutions.CombinationSum([2,3,6,7], 7));
+
+Console.WriteLine("Permute: " + Solutions.Permute([1, 2, 3]));
+
+Console.WriteLine();
+Console.WriteLine();
+Console.WriteLine();
+Console.WriteLine();
+Console.WriteLine();
+Console.WriteLine();
+Console.WriteLine();
+Console.WriteLine();
+Console.WriteLine();
+Console.WriteLine();
+Console.WriteLine();
+Console.WriteLine();
+Console.WriteLine();
+Console.WriteLine();
+Console.WriteLine();
 Console.WriteLine();
 Console.WriteLine();
