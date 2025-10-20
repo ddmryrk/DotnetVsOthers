@@ -66,8 +66,6 @@ public class LRUCache {
         cache.put(key, newNode);
         insert(newNode);
 
-        newNode.
-
         if (cache.size() > cap) {
             Node lru = oldest.next;
             remove(lru);
